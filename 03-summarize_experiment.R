@@ -49,8 +49,8 @@ rse[, c("A", "D", "F")]
 colData(rse)
 
 ## Visualizing the third gene with a boxplot
-x <- assay(rse)[3, ][,] # Take all samples in Treatment
-y <- y <- colData(rse)$Treatment
+x <- assay(rse)[3, ] # Take all samples in Treatment
+y <- colData(rse)$Treatment
 boxplot(
   x ~ y,
   main = "Gene 3",
